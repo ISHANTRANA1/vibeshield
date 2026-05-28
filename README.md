@@ -1,6 +1,6 @@
-# 🔐 VibeSafe — GitHub Security Scanner
+# 🔐 VibeShield — GitHub Security Scanner
 
-> **Is your repo actually safe?** VibeSafe scans any public GitHub repository for exposed API keys, database credentials, hardcoded passwords, and sensitive files — built specifically for vibe coders.
+> **Is your repo actually safe?** VibeShield scans any public GitHub repository for exposed API keys, database credentials, hardcoded passwords, and sensitive files — built specifically for vibe coders.
 
 ---
 
@@ -34,8 +34,8 @@
 
 ```bash
 # Clone
-git clone https://github.com/YOURUSERNAME/vibesafe
-cd vibesafe
+git clone https://github.com/YOURUSERNAME/vibeshield
+cd vibeshield
 
 # Install
 npm install
@@ -55,7 +55,7 @@ Open [http://localhost:3000](http://localhost:3000)
 ## 🏗️ Architecture
 
 ```
-vibesafe/
+vibeshield/
 ├── src/
 │   ├── app/
 │   │   ├── api/scan/route.ts     # Scan API endpoint

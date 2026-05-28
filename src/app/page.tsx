@@ -94,7 +94,7 @@ export default function HomePage() {
               <path d="M6 8l1.5 1.5L10.5 6" stroke="#00ff88" strokeWidth="1.5" strokeLinecap="round"/>
             </svg>
           </div>
-          <span className="font-display font-bold text-lg text-[var(--text)]">VibeSafe</span>
+          <span className="font-display font-bold text-lg text-[var(--text)]">VibeShield</span>
           <span className="text-xs bg-[var(--border)] text-[var(--dim)] px-2 py-0.5 rounded font-mono">v1.0</span>
         </div>
         <div className="flex items-center gap-4 text-sm text-[var(--dim)]">
@@ -276,7 +276,7 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="border-t border-[var(--border)] px-6 py-4 text-center text-xs text-[var(--muted)]">
-        VibeSafe — Open source GitHub security scanner for vibe coders.{' '}
+        VibeShield — Open source GitHub security scanner for vibe coders.{' '}
         <span className="text-[var(--dim)]">Only scans public repositories.</span>
       </footer>
     </main>

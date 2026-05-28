@@ -30,7 +30,7 @@ export default function ResultsDashboard({ report, onReset }: { report: ScanRepo
   const circumference = 2 * Math.PI * 45
   const dashOffset = circumference - (report.score / 100) * circumference
 
-  const badgeMarkdown = `![VibeSafe](https://img.shields.io/badge/VibeSafe-${report.grade}%20(${report.score}%2F100)-${report.grade === 'A' ? '00ff88' : report.grade === 'F' ? 'ff3366' : 'ffaa00'}?style=flat&logo=shield)`
+  const badgeMarkdown = `![VibeShield](https://img.shields.io/badge/VibeShield-${report.grade}%20(${report.score}%2F100)-${report.grade === 'A' ? '00ff88' : report.grade === 'F' ? 'ff3366' : 'ffaa00'}?style=flat&logo=shield)`
 
   const copyBadge = () => {
     navigator.clipboard.writeText(badgeMarkdown)
@@ -49,7 +49,7 @@ export default function ResultsDashboard({ report, onReset }: { report: ScanRepo
               <path d="M6 8l1.5 1.5L10.5 6" stroke="#00ff88" strokeWidth="1.5" strokeLinecap="round"/>
             </svg>
           </div>
-          <span className="font-display font-bold text-lg">VibeSafe</span>
+          <span className="font-display font-bold text-lg">VibeShield</span>
         </div>
         <button
           onClick={onReset}
@@ -140,7 +140,7 @@ export default function ResultsDashboard({ report, onReset }: { report: ScanRepo
               {copiedBadge ? '✓ Copied!' : '📋 Copy Badge'}
             </button>
             <div className={`mt-2 text-xs font-bold px-3 py-1 rounded-full ${isClean ? 'bg-[var(--accent)]/20 text-[var(--accent)]' : hasCritical ? 'bg-[var(--danger)]/20 text-[var(--danger)]' : 'bg-[var(--warn)]/20 text-[var(--warn)]'}`}>
-              VibeSafe {report.grade} ({report.score}/100)
+              VibeShield {report.grade} ({report.score}/100)
             </div>
           </div>
         </div>
