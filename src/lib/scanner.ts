@@ -316,6 +316,9 @@ export const SKIP_PATHS = [
   '.git/',
   'vendor/',
   '__pycache__/',
+  'package-lock.json',
+  'yarn.lock',
+  'pnpm-lock.yaml',
 ]
 
 // ─── Scan content for secrets ─────────────────────────────────────────────────
